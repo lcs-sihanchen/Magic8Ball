@@ -32,6 +32,9 @@
                                 <state key="normal" title="SHAKE！" backgroundImage="Screen Shot 2019-10-25 at 9.51.19 PM">
                                     <color key="titleColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="shakeIt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5bb-R4-8WQ"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="maP-Zw-iOG">
                                 <rect key="frame" x="85" y="375" width="204" height="199"/>
@@ -45,6 +48,9 @@
                         <color key="tintColor" cocoaTouchSystemColor="lightTextColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="outputString" destination="maP-Zw-iOG" id="hgn-Mz-EHA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
