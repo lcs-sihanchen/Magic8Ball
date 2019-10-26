@@ -24,6 +24,7 @@ class ViewController: UIViewController {
     
     @IBAction func shakeIt(_ sender: Any) {
         targetNumber = Int.random(in: 1...101)
+        print(targetNumber)
         switch targetNumber {
         case 1...5:
             outputString.text = "It is certain"
