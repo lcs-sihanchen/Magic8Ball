@@ -9,7 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController {
+    // Generate random numbers
     var targetNumber = Int.random(in: 1...100)
+    // Connecting outlets to the code
     
     @IBOutlet weak var outputString: UILabel!
     
@@ -21,7 +23,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    
+    // Actions---respond to random selection and output the response
     @IBAction func shakeIt(_ sender: Any) {
         targetNumber = Int.random(in: 1...101)
         print(targetNumber)
@@ -69,7 +71,7 @@ class ViewController: UIViewController {
         case 96...100:
             outputString.text = "My reply is no"
         default:
-            outputString.text = "Congratulations! Magic 8!"
+            outputString.text = "Magic 8! 100% True"
         }
     }
 }
